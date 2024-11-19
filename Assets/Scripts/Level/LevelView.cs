@@ -6,6 +6,11 @@ public class LevelView : MonoBehaviour
     [SerializeField] private LevelManager _levelManager;
     [SerializeField] private TextMeshProUGUI _textLevel;
 
+    private void Start()
+    {
+        DisplayLevel();
+    }
+
     private void OnEnable()
     {
         _levelManager.LevelUp += DisplayLevel;

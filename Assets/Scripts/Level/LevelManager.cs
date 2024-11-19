@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        Level = _gamebalance.Level;
         CostUpgrade = _gamebalance.CostUpgrade;
     }
 
